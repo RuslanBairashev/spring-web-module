@@ -17,6 +17,12 @@
 - Использовать названия эндпоинтов, http коды ответа в соответствии со сцецификацией HTTP протокола
 - Добавить unit тесты для Rest
 
+### Использование REST
+- GET: curl -vvv -GET http://localhost:8089/api/v1/books
+- POST: curl -vvv -POST -H "Content-Type:application/json" -d @data.json http://localhost:8089/api/v1/books
+- PUT: curl -vvv -PUT -H "Content-Type:application/json" -d @data.json http://localhost:8089/api/v1/books
+- DELETE: curl -vvv -XDELETE http://localhost:8089/api/v1/books/1
+
 ### Как работать над заданием
 - создаете форк проекта
 - создаете от мастер свою новую ветку с типом release с именем по шаблону module_task (на пр. release/spring_web_1)
